@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>WEB VIBE @KK | Premium Classic Web Development Agency</title>
+  <meta name="title" content="WEB VIBE @KK | Premium Classic Web Development Agency" />
+  <meta name="description" content="Timeless, classic, and luxury portfolio website of WEB VIBE @KK (Chenchu Koushik) — Web Developer & UI/UX Specialist. Call/WhatsApp: 7780660803." />
+  <meta name="author" content="WEB VIBE @KK" />
+
+  <!-- Favicon / Top Browser Tab Logo -->
+  <link rel="icon" type="image/jpeg" href="./logo.jpg" />
+  <link rel="apple-touch-icon" href="./logo.jpg" />
+
+  <!-- Google Fonts: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- EmailJS Browser SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- CLASSIC STICKY NAVBAR -->
+  <header class="classic-header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="./logo.jpg" alt="" class="brand-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">WEB VIBE @KK</span>
+          <span class="logo-subtitle">DIGITAL AGENCY</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Work</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/917780660803?text=Hello%20WEB%20VIBE%20@KK!%20I%20want%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener" class="btn-classic-primary hide-mobile">
+          Let's Talk
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" onclick="toggleMobileMenu()" title="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer hidden">
+    <div class="mobile-drawer-header">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <img src="./logo.jpg" alt="WEB VIBE @KK Logo" class="brand-logo-img" style="width:36px; height:36px;" />
+        <span class="logo-title" style="font-size:1.05rem;">WEB VIBE @KK</span>
+      </div>
+      <button class="close-mobile-drawer" onclick="toggleMobileMenu()">&times;</button>
+    </div>
+    <nav class="mobile-drawer-links">
+      <a href="#hero" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="#about" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-user"></i> About</a>
+      <a href="#services" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-cubes"></i> Services</a>
+      <a href="#portfolio" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-layer-group"></i> Work</a>
+      <a href="#solutions" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-compass-drafting"></i> Solutions</a>
+      <a href="#testimonials" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-comments"></i> Reviews</a>
+      <a href="#process" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-list-check"></i> Process</a>
+      <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()"><i class="fa-solid fa-envelope"></i> Contact</a>
+    </nav>
+    <a href="https://wa.me/917780660803" target="_blank" class="btn-classic-primary w-100 margin-top">
+      <i class="fa-brands fa-whatsapp"></i> Let's Talk (7780660803)
+    </a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-classic-section">
+      <!-- Interactive Dynamic Particle Canvas -->
+      <canvas id="hero-particles" class="hero-particle-canvas"></canvas>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="badge-classic"><i class="fa-solid fa-crown text-gold"></i> PREMIUM WEB DEVELOPMENT AGENCY</span>
+            <span class="status-indicator-pill"><span class="pulse-dot"></span> Available for Projects</span>
+          </div>
+          <h1 class="hero-headline">
+            We Engineer <br />
+            <span class="text-serif text-blue typewriter-wrapper">
+              <span id="typewriter-text">Modern Websites</span><span class="typewriter-cursor">|</span>
+            </span>
+          </h1>
+          <p class="hero-subheading">
+            Helping startups, global brands, and professionals craft fast, responsive, and visually impressive digital experiences tailored for maximum conversion.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#portfolio" class="btn-classic-primary lg"><i class="fa-solid fa-layer-group"></i> Explore Projects</a>
+            <a href="https://wa.me/917780660803?text=Hello%20Chenchu%20Koushik!%20I%20want%20to%20discuss%20a%20project." target="_blank" class="btn-classic-outline lg"><i class="fa-brands fa-whatsapp text-blue"></i> Let's Talk</a>
+          </div>
+
+          <div class="hero-tech-pills">
+            <span class="tech-pill"><i class="fa-brands fa-react text-blue"></i> React.js</span>
+            <span class="tech-pill"><i class="fa-brands fa-js" style="color:#eab308;"></i> Modern ES6+</span>
+            <span class="tech-pill"><i class="fa-brands fa-node text-green"></i> Node.js</span>
+            <span class="tech-pill"><i class="fa-solid fa-cube text-purple"></i> 3D & UI/UX</span>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="mockup-frame interactive-card">
+            <div class="mockup-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="mockup-url">webvibe-kk.com • live</span>
+              <span class="live-pill"><i class="fa-solid fa-bolt"></i> 99+ Speed</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-content">
+                <span class="text-gold font-mono uppercase">WEB VIBE @KK</span>
+                <h3 class="text-serif">Crafting Digital Excellence</h3>
+                <p>Modern • Responsive • Full-Stack</p>
+                <div class="mockup-stats-preview">
+                  <div class="m-stat"><strong>6+</strong><span>Live Projects</span></div>
+                  <div class="m-stat"><strong>100%</strong><span>Responsive</span></div>
+                  <div class="m-stat"><strong>Fast</strong><span>Load Times</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CREATIVE STATS COUNTER BAR -->
+      <div class="container margin-top">
+        <div class="creative-stats-bar">
+          <div class="stat-counter-box">
+            <div class="stat-icon"><i class="fa-solid fa-laptop-code text-blue"></i></div>
+            <div class="stat-meta">
+              <span class="stat-number" data-target="6">6+</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+          </div>
+          <div class="stat-counter-box">
+            <div class="stat-icon"><i class="fa-solid fa-gem text-gold"></i></div>
+            <div class="stat-meta">
+              <span class="stat-number" data-target="100">100%</span>
+              <span class="stat-label">Client Focus</span>
+            </div>
+          </div>
+          <div class="stat-counter-box">
+            <div class="stat-icon"><i class="fa-solid fa-gauge-high text-green"></i></div>
+            <div class="stat-meta">
+              <span class="stat-number" data-target="98">98+</span>
+              <span class="stat-label">Performance Score</span>
+            </div>
+          </div>
+          <div class="stat-counter-box">
+            <div class="stat-icon"><i class="fa-solid fa-headset text-purple"></i></div>
+            <div class="stat-meta">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">WhatsApp Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-classic bg-light">
+      <div class="container">
+        <div class="about-two-col">
+          <div class="about-profile-wrapper">
+            <div class="profile-frame">
+              <div class="profile-avatar-circle">
+                <img src="./logo.jpg" alt="" class="profile-logo-img" />
+              </div>
+              <div class="profile-details text-center margin-top-sm">
+                <h3 class="text-serif">Chenchu Koushik</h3>
+                <p class="text-gold font-mono">Founder & Lead Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <span class="section-sub-tag"><i class="fa-solid fa-star"></i> ABOUT WEB VIBE @KK</span>
+            <h2 class="section-heading text-serif">Timeless Design & Clean Architecture</h2>
+            
+            <p class="paragraph-lead">
+              Welcome to WEB VIBE @KK. I am Chenchu Koushik, a full-stack web developer and UI/UX specialist dedicated to engineering fast, accessible, and elegant web solutions for clients worldwide.
+            </p>
+
+            <div class="about-grid-blocks margin-top">
+              <div class="about-block">
+                <h4><i class="fa-solid fa-compass text-blue"></i> Our Mission</h4>
+                <p>To empower brands with high-performance web platforms that drive measurable growth.</p>
+              </div>
+              <div class="about-block">
+                <h4><i class="fa-solid fa-eye text-gold"></i> Our Vision</h4>
+                <p>Setting the benchmark for editorial elegance, code quality, and client trust.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section-classic">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-tag">WHAT WE OFFER</span>
+          <h2 class="section-heading text-serif">Tailored Web Services</h2>
+          <p class="section-description">High-quality digital solutions designed for modern businesses.</p>
+        </div>
+
+        <div class="services-classic-grid">
+          <div class="service-card" onclick="openServiceModal('business')">
+            <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Business Websites</h3>
+            <p>Professional corporate sites built with clean typography, fast load speeds, and clear call-to-actions.</p>
+            <button class="learn-more-link-btn" onclick="event.stopPropagation(); openServiceModal('business')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="service-card" onclick="openServiceModal('portfolio')">
+            <div class="service-icon"><i class="fa-solid fa-id-card"></i></div>
+            <h3>Portfolio Websites</h3>
+            <p>Elegant showcase websites for professionals, agency owners, and creative directors.</p>
+            <button class="learn-more-link-btn" onclick="event.stopPropagation(); openServiceModal('portfolio')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="service-card" onclick="openServiceModal('landing')">
+            <div class="service-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Landing Pages</h3>
+            <p>High-converting single-page websites engineered for marketing campaigns and product launches.</p>
+            <button class="learn-more-link-btn" onclick="event.stopPropagation(); openServiceModal('landing')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="service-card" onclick="openServiceModal('ecommerce')">
+            <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <h3>E-Commerce Websites</h3>
+            <p>Custom online stores featuring live price tickers, product catalogs, and secure checkout integration.</p>
+            <button class="learn-more-link-btn" onclick="event.stopPropagation(); openServiceModal('ecommerce')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="service-card" onclick="openServiceModal('customapp')">
+            <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Custom Web Applications</h3>
+            <p>Tailored web systems, healthcare diagnostic portals, and automated business software.</p>
+            <button class="learn-more-link-btn" onclick="event.stopPropagation(); openServiceModal('customapp')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+          <div class="service-card" onclick="openServiceModal('maintenance')">
+            <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
+            <h3>Website Maintenance</h3>
+            <p>Ongoing technical support, speed optimization, security updates, and content management.</p>
+            <button class="learn-more-link-btn" onclick="event.stopPropagation(); openServiceModal('maintenance')">Learn More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="section-classic bg-light">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-tag"><i class="fa-solid fa-shapes"></i> SELECTED WORKS</span>
+          <h2 class="section-heading text-serif">Featured Portfolio</h2>
+          <p class="section-description">Handpicked client applications, premium digital platforms, and high-converting web solutions.</p>
+        </div>
+
+        <!-- CREATIVE PORTFOLIO FILTER TABS -->
+        <div class="portfolio-filter-tabs">
+          <button class="filter-tab-btn active" data-filter="all"><i class="fa-solid fa-border-all"></i> All Works (6)</button>
+          <button class="filter-tab-btn" data-filter="ecommerce"><i class="fa-solid fa-bag-shopping"></i> E-Commerce & Retail</button>
+          <button class="filter-tab-btn" data-filter="webapp"><i class="fa-solid fa-laptop-code"></i> Platforms & Systems</button>
+          <button class="filter-tab-btn" data-filter="academic"><i class="fa-solid fa-book-bookmark"></i> Education & Publishing</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Project 1: Edvanta -->
+          <div class="portfolio-card interactive-card" data-category="academic" onclick="openProjectModal('edvanta')">
+            <div class="project-thumb-box">
+              <div class="project-thumb-placeholder">
+                <i class="fa-solid fa-graduation-cap text-blue"></i>
+              </div>
+              <span class="project-status-badge live"><i class="fa-solid fa-circle"></i> Live Site</span>
+              <div class="project-hover-overlay">
+                <a href="https://edvanta-edu.in/" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="btn-classic-primary sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">EdTech & Career Platform</span>
+              <h3 class="project-title text-serif"><a href="https://edvanta-edu.in/" target="_blank" rel="noopener" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;">Edvanta - Educational Networking Platform</a></h3>
+              <p class="project-desc-short">Mentorship and career transition portal with interactive tools.</p>
+              <p class="project-tech">React.js • Node.js • Express • EdTech APIs</p>
+            </div>
+          </div>
+
+          <!-- Project 2: GARUDA Luxury -->
+          <div class="portfolio-card interactive-card" data-category="ecommerce" onclick="openProjectModal('garuda')">
+            <div class="project-thumb-box">
+              <div class="project-thumb-placeholder">
+                <i class="fa-solid fa-gem text-gold"></i>
+              </div>
+              <span class="project-status-badge live"><i class="fa-solid fa-circle"></i> Live Site</span>
+              <div class="project-hover-overlay">
+                <a href="https://koushik0623.github.io/garuda/" target="_blank" onclick="event.stopPropagation()" class="btn-classic-primary sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Luxury E-Commerce</span>
+              <h3 class="project-title text-serif">Member Entry | GARUDA Luxury</h3>
+              <p class="project-desc-short">Bespoke jewelry store with real-time gold market price ticker.</p>
+              <p class="project-tech">Vite JS • Live Market API • CSS3 • Animations</p>
+            </div>
+          </div>
+
+          <!-- Project 3: Sparkle @kkv (online-) -->
+          <div class="portfolio-card interactive-card" data-category="ecommerce" onclick="openProjectModal('online')">
+            <div class="project-thumb-box">
+              <div class="project-thumb-placeholder">
+                <i class="fa-solid fa-wand-magic-sparkles text-purple"></i>
+              </div>
+              <span class="project-status-badge live"><i class="fa-solid fa-circle"></i> Live Site</span>
+              <div class="project-hover-overlay">
+                <a href="https://sparklekkv.com/" target="_blank" onclick="event.stopPropagation()" class="btn-classic-primary sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Store</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Luxury Fashion Store</span>
+              <h3 class="project-title text-serif">Sparkle @kkv - Fashion Accessories</h3>
+              <p class="project-desc-short">Full featured store with cart drawer, wishlist, quick view & admin portal.</p>
+              <p class="project-tech">React • Tailwind CSS • Framer Motion • Cart Engine</p>
+            </div>
+          </div>
+
+          <!-- Project 4: GrainCraft -->
+          <div class="portfolio-card interactive-card" data-category="webapp" onclick="openProjectModal('graincraft')">
+            <div class="project-thumb-box">
+              <div class="project-thumb-placeholder">
+                <i class="fa-solid fa-tree text-green"></i>
+              </div>
+              <span class="project-status-badge live"><i class="fa-solid fa-circle"></i> Live Site</span>
+              <div class="project-hover-overlay">
+                <a href="https://koushik0623.github.io/GrainCraft/" target="_blank" onclick="event.stopPropagation()" class="btn-classic-primary sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Woodworking & Craft Studio</span>
+              <h3 class="project-title text-serif">GrainCraft - Sustainable Studio</h3>
+              <p class="project-desc-short">Artisanal catalog showcase with multi-language RTL support.</p>
+              <p class="project-tech">HTML5 • CSS3 • ES6 Modules • WCAG 2.1 AA</p>
+            </div>
+          </div>
+
+          <!-- Project 5: Master Publish (masterpublish) -->
+          <div class="portfolio-card interactive-card" data-category="academic" onclick="openProjectModal('masterpublish')">
+            <div class="project-thumb-box">
+              <div class="project-thumb-placeholder">
+                <i class="fa-solid fa-book-journal-whills text-blue"></i>
+              </div>
+              <span class="project-status-badge live"><i class="fa-solid fa-circle"></i> Live Site</span>
+              <div class="project-hover-overlay">
+                <a href="https://masterpublisher.org/" target="_blank" onclick="event.stopPropagation()" class="btn-classic-primary sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Portal</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">Academic & Research Publishing</span>
+              <h3 class="project-title text-serif">Master Publish - Research Consultancy</h3>
+              <p class="project-desc-short">Consultancy portal supporting Scopus, SCI, Web of Science & UGC-CARE publications.</p>
+              <p class="project-tech">HTML5 • Modern CSS • JavaScript • Publication Engine</p>
+            </div>
+          </div>
+
+          <!-- Project 6: Finance Company (InsurShield) -->
+          <div class="portfolio-card interactive-card" data-category="webapp" onclick="openProjectModal('insurance')">
+            <div class="project-thumb-box">
+              <div class="project-thumb-placeholder">
+                <i class="fa-solid fa-shield-halved text-purple"></i>
+              </div>
+              <span class="project-status-badge live"><i class="fa-solid fa-circle"></i> Live Site</span>
+              <div class="project-hover-overlay">
+                <a href="https://koushik0623.github.io/insurance/" target="_blank" onclick="event.stopPropagation()" class="btn-classic-primary sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-category">InsurTech & Finance</span>
+              <h3 class="project-title text-serif">Finance Company | InsurShield</h3>
+              <p class="project-desc-short">Interactive insurance policy estimator and claims calculator system.</p>
+              <p class="project-tech">Node.js • Express API • Dynamic Calculation REST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURAL SOLUTIONS & BLUEPRINT LAB SECTION -->
+    <section id="solutions" class="section-classic">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-tag"><i class="fa-solid fa-compass-drafting text-gold"></i> ARCHITECTURAL BLUEPRINTS</span>
+          <h2 class="section-heading text-serif">Engineered Digital Solutions</h2>
+          <p class="section-description">High-performance digital architectures tailored for brand authority, conversions, and scale. Click any solution to inspect the technical blueprint, roadmap, and deliverables.</p>
+        </div>
+
+        <!-- 4 PRESET ARCHITECTURAL BLUEPRINT CARDS -->
+        <div class="solutions-grid">
+          <!-- Solution 1: Corporate Business -->
+          <div class="solution-card interactive-card" onclick="openBlueprintModal('business')">
+            <div class="solution-card-header">
+              <div class="solution-icon-box" style="background: rgba(10, 102, 194, 0.1); color: #0a66c2; border-color: rgba(10, 102, 194, 0.25);">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <div class="solution-badge-wrap">
+                <span class="solution-spec-id">ARCH-01</span>
+                <span class="solution-status-pill"><i class="fa-solid fa-bolt text-gold"></i> Core Vitals 99+</span>
+              </div>
+            </div>
+            <div class="solution-card-body">
+              <span class="solution-tier-label">Professional Business & Corporate Website</span>
+              <h3 class="solution-title text-serif">Corporate Business Websites</h3>
+              <p class="solution-summary">A clean, professional website designed to showcase your company, explain your services, build client trust, and bring new customer inquiries directly to your WhatsApp and email.</p>
+
+              <!-- In-Depth Tech Stack Chips -->
+              <div class="card-tech-chips">
+                <span>Modern Design</span>
+                <span>Fast Loading</span>
+                <span>Mobile Friendly</span>
+                <span>WhatsApp Leads</span>
+                <span>Google SEO Setup</span>
+              </div>
+              
+              <div class="solution-features-mini">
+                <div class="feat-row"><i class="fa-solid fa-check text-blue"></i> <span><strong>Fast Mobile Speed:</strong> Loads in less than 1 second on all smartphones, tablets, and computers.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-blue"></i> <span><strong>Google Search Ranking:</strong> Setup with proper business tags so prospective clients find you easily on Google.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-blue"></i> <span><strong>Instant WhatsApp Leads:</strong> Direct one-click button connects clients straight to your WhatsApp (7780660803).</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-blue"></i> <span><strong>1-Year Support & Security:</strong> Free SSL certificate, regular site backups, and dedicated technical support.</span></div>
+              </div>
+
+              <!-- Metrics Benchmark Row -->
+              <div class="card-metrics-row">
+                <span class="metric-tag"><i class="fa-solid fa-gauge-high text-gold"></i> Speed: <strong>99/100 Fast</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-shield-halved text-blue"></i> Support: <strong>1 Full Year</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-mobile-screen text-purple"></i> Mobile: <strong>100% Ready</strong></span>
+              </div>
+
+              <div class="solution-meta-bar">
+                <span class="meta-time"><i class="fa-regular fa-clock"></i> 8 Days Delivery</span>
+                <span class="meta-price">₹28,000 / $340</span>
+              </div>
+            </div>
+            <button class="btn-inspect-blueprint" onclick="event.stopPropagation(); openBlueprintModal('business')">
+              <span>Inspect Architecture Blueprint</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Solution 2: Luxury E-Commerce -->
+          <div class="solution-card interactive-card" onclick="openBlueprintModal('ecommerce')">
+            <div class="solution-card-header">
+              <div class="solution-icon-box" style="background: rgba(197, 160, 89, 0.12); color: #c5a059; border-color: rgba(197, 160, 89, 0.3);">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+              <div class="solution-badge-wrap">
+                <span class="solution-spec-id" style="color:#b45309;">ARCH-02</span>
+                <span class="solution-status-pill" style="color: #b45309;"><i class="fa-solid fa-bag-shopping text-gold"></i> Complete Online Store</span>
+              </div>
+            </div>
+            <div class="solution-card-body">
+              <span class="solution-tier-label">Online Store & E-Commerce Website</span>
+              <h3 class="solution-title text-serif">E-Commerce & Online Store Websites</h3>
+              <p class="solution-summary">A complete shopping website built to sell your products online. Includes an easy product catalog, quick slide-out cart, secure online payment gateway, and instant order alerts.</p>
+
+              <!-- In-Depth Tech Stack Chips -->
+              <div class="card-tech-chips">
+                <span>Product Catalog</span>
+                <span>Cart Drawer</span>
+                <span>Razorpay / UPI</span>
+                <span>Mobile Optimized</span>
+                <span>Order Alerts</span>
+              </div>
+              
+              <div class="solution-features-mini">
+                <div class="feat-row"><i class="fa-solid fa-check text-gold"></i> <span><strong>Smooth Shopping Experience:</strong> Easy product browsing, quick cart drawer, and instant product search.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-gold"></i> <span><strong>Secure Online Payments:</strong> Works seamlessly with Razorpay, Stripe, UPI (PhonePe, GPay), and cards.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-gold"></i> <span><strong>Product Options & Stock:</strong> Simple selectors for colors, sizes, and real-time stock availability.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-gold"></i> <span><strong>Instant Order Alerts:</strong> Instant notifications on WhatsApp and email whenever a customer orders.</span></div>
+              </div>
+
+              <!-- Metrics Benchmark Row -->
+              <div class="card-metrics-row">
+                <span class="metric-tag"><i class="fa-solid fa-gauge-high text-gold"></i> Checkout: <strong>Fast & Easy</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-lock text-blue"></i> Payments: <strong>100% Secure</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-mobile-screen text-purple"></i> Mobile: <strong>100% Ready</strong></span>
+              </div>
+
+              <div class="solution-meta-bar">
+                <span class="meta-time"><i class="fa-regular fa-clock"></i> 12 Days Delivery</span>
+                <span class="meta-price">₹45,000 / $550</span>
+              </div>
+            </div>
+            <button class="btn-inspect-blueprint" onclick="event.stopPropagation(); openBlueprintModal('ecommerce')">
+              <span>Inspect Architecture Blueprint</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Solution 3: Custom Web Apps & AI Microservices -->
+          <div class="solution-card interactive-card" onclick="openBlueprintModal('webapp')">
+            <div class="solution-card-header">
+              <div class="solution-icon-box" style="background: rgba(147, 51, 234, 0.1); color: #9333ea; border-color: rgba(147, 51, 234, 0.25);">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="solution-badge-wrap">
+                <span class="solution-spec-id" style="color:#9333ea;">ARCH-03</span>
+                <span class="solution-status-pill" style="color: #9333ea;"><i class="fa-solid fa-microchip"></i> AI & Custom Software</span>
+              </div>
+            </div>
+            <div class="solution-card-body">
+              <span class="solution-tier-label">Custom Web Applications & AI Software</span>
+              <h3 class="solution-title text-serif">Custom Web Apps & AI Systems</h3>
+              <p class="solution-summary">Custom web software built specifically for your business operations. Includes private user logins, client dashboards, automated calculation tools, custom databases, and smart AI features.</p>
+
+              <!-- In-Depth Tech Stack Chips -->
+              <div class="card-tech-chips">
+                <span>Node.js Backend</span>
+                <span>Private Client Login</span>
+                <span>Smart AI Tools</span>
+                <span>Secure Database</span>
+                <span>Custom Dashboards</span>
+              </div>
+              
+              <div class="solution-features-mini">
+                <div class="feat-row"><i class="fa-solid fa-check text-purple"></i> <span><strong>Secure User & Admin Logins:</strong> Protected member accounts with encrypted passwords and staff permissions.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-purple"></i> <span><strong>Smart AI & Automation:</strong> Integrated deep learning models, automated data workflows, and smart tools.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-purple"></i> <span><strong>Custom Business Database:</strong> Dedicated database to store all your business data safely and quickly.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-purple"></i> <span><strong>Live Charts & Reports:</strong> Visual charts, real-time calculations, and customized dashboards.</span></div>
+              </div>
+
+              <!-- Metrics Benchmark Row -->
+              <div class="card-metrics-row">
+                <span class="metric-tag"><i class="fa-solid fa-gauge-high text-gold"></i> Latency: <strong>&lt;50ms Fast</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-key text-blue"></i> Security: <strong>Encrypted Data</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-database text-purple"></i> Tier: <strong>Enterprise Ready</strong></span>
+              </div>
+
+              <div class="solution-meta-bar">
+                <span class="meta-time"><i class="fa-regular fa-clock"></i> 16 Days Delivery</span>
+                <span class="meta-price">₹58,000 / $700</span>
+              </div>
+            </div>
+            <button class="btn-inspect-blueprint" onclick="event.stopPropagation(); openBlueprintModal('webapp')">
+              <span>Inspect Architecture Blueprint</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Solution 4: Academic Publishing & Editorial Platforms -->
+          <div class="solution-card interactive-card" onclick="openBlueprintModal('publishing')">
+            <div class="solution-card-header">
+              <div class="solution-icon-box" style="background: rgba(22, 163, 74, 0.1); color: #16a34a; border-color: rgba(22, 163, 74, 0.25);">
+                <i class="fa-solid fa-book-journal-whills"></i>
+              </div>
+              <div class="solution-badge-wrap">
+                <span class="solution-spec-id" style="color:#16a34a;">ARCH-04</span>
+                <span class="solution-status-pill" style="color: #16a34a;"><i class="fa-solid fa-feather-pointed"></i> Research & Journal Hub</span>
+              </div>
+            </div>
+            <div class="solution-card-body">
+              <span class="solution-tier-label">Academic Publishing & Research Hubs</span>
+              <h3 class="solution-title text-serif">Scholarly Publishing Platforms</h3>
+              <p class="solution-summary">A dedicated publishing platform for academic journals, research consultancies, and conference proceedings. Features an easy paper intake form for authors and fast PDF reading.</p>
+
+              <!-- In-Depth Tech Stack Chips -->
+              <div class="card-tech-chips">
+                <span>Academic Catalog</span>
+                <span>Author Submission</span>
+                <span>Fast PDF Reader</span>
+                <span>Multi-Language RTL</span>
+                <span>Google Scholar Ready</span>
+              </div>
+              
+              <div class="solution-features-mini">
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Online Author Submissions:</strong> Simple submission form for researchers to upload papers and track status.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Google Scholar & Indexing:</strong> Formatted paper details structured for Google Scholar and research indexing.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Fast Document Downloads:</strong> Instant document reading and fast PDF downloads for readers worldwide.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Multiple Languages Supported:</strong> Clean layout support for both English and Right-to-Left (Arabic) text.</span></div>
+              </div>
+
+              <!-- Metrics Benchmark Row -->
+              <div class="card-metrics-row">
+                <span class="metric-tag"><i class="fa-solid fa-globe text-gold"></i> Reading: <strong>Instant Load</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-bolt text-blue"></i> Languages: <strong>English & RTL</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-file-check text-purple"></i> Standards: <strong>Academic Ready</strong></span>
+              </div>
+
+              <div class="solution-meta-bar">
+                <span class="meta-time"><i class="fa-regular fa-clock"></i> 10 Days Delivery</span>
+                <span class="meta-price">₹38,000 / $460</span>
+              </div>
+            </div>
+            <button class="btn-inspect-blueprint" onclick="event.stopPropagation(); openBlueprintModal('publishing')">
+              <span>Inspect Architecture Blueprint</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <!-- Solution 5: Customized Bespoke Customer Architecture (Custom Customer Option) -->
+          <div class="solution-card interactive-card bespoke-highlight-card" onclick="openBlueprintModal('custom')">
+            <div class="solution-card-header">
+              <div class="solution-icon-box" style="background: rgba(197, 160, 89, 0.15); color: #c5a059; border-color: rgba(197, 160, 89, 0.35);">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <div class="solution-badge-wrap">
+                <span class="solution-spec-id" style="color:#c5a059;">ARCH-05 / BESPOKE</span>
+                <span class="solution-status-pill" style="color: #c5a059;"><i class="fa-solid fa-crown"></i> Customer Tailored</span>
+              </div>
+            </div>
+            <div class="solution-card-body">
+              <span class="solution-tier-label">Customized Customer Plan & Bespoke Scope</span>
+              <h3 class="solution-title text-serif">Customized Customer Solutions</h3>
+              <p class="solution-summary">Have a specific requirement, unique feature, or set budget? We will design a custom plan and build your website to match your exact vision, timeline, and budget.</p>
+
+              <!-- In-Depth Tech Stack Chips -->
+              <div class="card-tech-chips">
+                <span>100% Custom Scope</span>
+                <span>Your Choice of Stack</span>
+                <span>Flexible Budget</span>
+                <span>Custom Features</span>
+                <span>Direct WhatsApp Help</span>
+              </div>
+              
+              <div class="solution-features-mini">
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Built to Your Needs:</strong> 100% custom website design and features created specifically for your business.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Fits Your Budget:</strong> We adjust features and delivery phases to match your budget (from ₹20,000 to ₹60,000).</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Direct Developer Access:</strong> Talk directly with Chenchu Koushik on WhatsApp (7780660803) for any questions.</span></div>
+                <div class="feat-row"><i class="fa-solid fa-check text-green"></i> <span><strong>Complete Site Ownership:</strong> Full access, clean code, domain setup, and ongoing technical support.</span></div>
+              </div>
+
+              <!-- Metrics Benchmark Row -->
+              <div class="card-metrics-row">
+                <span class="metric-tag"><i class="fa-solid fa-sliders text-gold"></i> Scope: <strong>100% Custom</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-code-branch text-blue"></i> Timeline: <strong>Flexible Sprints</strong></span>
+                <span class="metric-tag"><i class="fa-solid fa-user-shield text-purple"></i> Support: <strong>1-on-1 Direct</strong></span>
+              </div>
+
+              <div class="solution-meta-bar">
+                <span class="meta-time"><i class="fa-regular fa-clock"></i> Flexible Milestones</span>
+                <span class="meta-price" style="color:var(--warm-gold);">Custom Budget (₹25,000 – ₹60,000)</span>
+              </div>
+            </div>
+            <button class="btn-inspect-blueprint" onclick="event.stopPropagation(); openBlueprintModal('custom')">
+              <span>Configure Custom Blueprint</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE LIVE SCOPE & ESTIMATE BUILDER -->
+        <div class="interactive-scope-box">
+          <div class="scope-box-header">
+            <div>
+              <span class="scope-badge"><i class="fa-solid fa-sliders"></i> INTERACTIVE ESTIMATOR</span>
+              <h3 class="text-serif" style="margin:0.25rem 0 0.25rem 0; font-size:1.4rem;">Configure Your Custom Scope & Blueprint</h3>
+              <p style="margin:0; font-size:0.88rem; color:var(--text-muted);">Toggle your required specs to calculate instant delivery timelines, tech stack, and investment estimate.</p>
+            </div>
+            <div class="scope-live-total">
+              <span class="total-label">Estimated Investment</span>
+              <span id="scope-total-display" class="total-price font-serif text-blue">₹28,000</span>
+              <span id="scope-timeline-display" class="total-days font-mono text-gold"><i class="fa-regular fa-clock"></i> 8 Days Delivery</span>
+            </div>
+          </div>
+
+          <div class="scope-controls-grid">
+            <!-- Project Type Dropdown -->
+            <div class="scope-control-group">
+              <label><i class="fa-solid fa-layer-group text-blue"></i> Select Website / Solution Plan</label>
+              <select id="scope-type-select" onchange="updateCustomScope()">
+                <option value="business" data-price="28000" data-days="8">Corporate Business Website (Base: ₹28,000)</option>
+                <option value="ecommerce" data-price="45000" data-days="12">Online Store & E-Commerce (Base: ₹45,000)</option>
+                <option value="webapp" data-price="58000" data-days="16">Custom Web App & AI Software (Base: ₹58,000)</option>
+                <option value="publishing" data-price="38000" data-days="10">Academic Publishing Platform (Base: ₹38,000)</option>
+                <option value="portfolio" data-price="20000" data-days="5">Personal Brand & Portfolio (Base: ₹20,000)</option>
+                <option value="custom" data-price="0" data-days="0">★ Customized Bespoke Customer Plan (Flexible Budget ₹25k – ₹60k)</option>
+              </select>
+            </div>
+
+            <!-- Delivery Speed -->
+            <div class="scope-control-group">
+              <label><i class="fa-solid fa-gauge-high text-gold"></i> Deployment Velocity</label>
+              <select id="scope-speed-select" onchange="updateCustomScope()">
+                <option value="standard" data-mult="1" data-daydiff="0">Standard Quality Delivery (Normal SLA)</option>
+                <option value="express" data-mult="1.25" data-daydiff="-3">Express VIP Delivery (Accelerated Sprint)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Add-ons Checkboxes -->
+          <div class="scope-addons-wrap">
+            <label class="scope-addons-title"><i class="fa-solid fa-circle-plus text-blue"></i> Engineering Add-ons & Integrations:</label>
+            <div class="scope-addons-chips">
+              <label class="addon-chip active">
+                <input type="checkbox" id="addon-whatsapp" checked disabled />
+                <span><i class="fa-brands fa-whatsapp text-green"></i> Instant WhatsApp Leads (Included)</span>
+              </label>
+              <label class="addon-chip active">
+                <input type="checkbox" id="addon-seo" checked disabled />
+                <span><i class="fa-solid fa-chart-line text-blue"></i> Google SEO Setup (Included)</span>
+              </label>
+              <label class="addon-chip" onclick="setTimeout(updateCustomScope, 10)">
+                <input type="checkbox" id="addon-particles" data-price="4000" data-days="2" />
+                <span><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Fluid Particle / 3D Canvas (+₹4,000)</span>
+              </label>
+              <label class="addon-chip" onclick="setTimeout(updateCustomScope, 10)">
+                <input type="checkbox" id="addon-admin" data-price="8000" data-days="3" />
+                <span><i class="fa-solid fa-lock text-purple"></i> Admin Dashboard & CMS (+₹8,000)</span>
+              </label>
+              <label class="addon-chip" onclick="setTimeout(updateCustomScope, 10)">
+                <input type="checkbox" id="addon-api" data-price="10000" data-days="3" />
+                <span><i class="fa-solid fa-database text-blue"></i> Custom Backend & REST API (+₹10,000)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Bottom Button -->
+          <div class="scope-footer-action">
+            <button class="btn-classic-primary" onclick="generateCustomBlueprint()">
+              <i class="fa-solid fa-compass-drafting"></i> Open Configured Architectural Blueprint
+            </button>
+            <a id="scope-direct-wa-btn" href="https://wa.me/917780660803?text=Hello%20WEB%20VIBE%20@KK!%20I%20want%20to%20order%20the%20Corporate%20Business%20Website%20for%20%E2%82%B928,000." target="_blank" rel="noopener" class="btn-classic-outline">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp (7780660803)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (CLEAN VERTICAL TIMELINE) -->
+    <section id="experience" class="section-classic bg-light">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-tag">CAREER ROADMAP</span>
+          <h2 class="section-heading text-serif">Experience & Journey</h2>
+          <p class="section-description">A timeline of learning, development, and commercial client delivery.</p>
+        </div>
+
+        <div class="classic-timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022</span>
+              <h3 class="text-serif">Learning Journey</h3>
+              <p>Specialized in Computer Science fundamentals, algorithm design, PyTorch deep learning, and modern web standards.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h3 class="text-serif">Internships & AI Integration</h3>
+              <p>Developed clinical medical diagnostics tools and REST API microservices for insurance workflows.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024</span>
+              <h3 class="text-serif">Freelance Projects</h3>
+              <p>Engineered Garuda Luxury gold market live platform and GrainCraft sustainable agro marketplace.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2026 - Present</span>
+              <h3 class="text-serif">Client Work & Agency Leadership</h3>
+              <p>Leading WEB VIBE @KK, delivering high-end corporate websites and custom web software worldwide.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="section-classic">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-tag">TESTIMONIALS</span>
+          <h2 class="section-heading text-serif">Client Feedback</h2>
+          <p class="section-description">Endorsements from corporate clients and business leaders.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text">"WEB VIBE @KK delivered an exceptional e-commerce platform with live gold market tracking. Clean, fast, and completely professional."</p>
+            <div class="client-info margin-top-sm">
+              <div class="client-avatar"><i class="fa-solid fa-user-tie"></i></div>
+              <div>
+                <strong class="client-name">Director of E-Commerce</strong>
+                <span class="client-company">Garuda Luxury Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text">"The Edvanta educational networking platform built by Chenchu Koushik surpassed our expectations. Outstanding user interface, fast performance, and seamless career guidance tools."</p>
+            <div class="client-info margin-top-sm">
+              <div class="client-avatar"><i class="fa-solid fa-graduation-cap text-blue"></i></div>
+              <div>
+                <strong class="client-name">Founder & CEO</strong>
+                <span class="client-company">Edvanta Official Platform</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="review-text">"Prompt delivery, flawless mobile responsiveness, and clear communication throughout. Highly recommended for web development."</p>
+            <div class="client-info margin-top-sm">
+              <div class="client-avatar"><i class="fa-solid fa-user-gear"></i></div>
+              <div>
+                <strong class="client-name">Operations Manager</strong>
+                <span class="client-company">InsurShield Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION (6 SIMPLE STEPS) -->
+    <section id="process" class="section-classic">
+      <div class="container">
+        <div class="section-header text-center">
+
+          <span class="section-sub-tag">METHODOLOGY</span>
+          <h2 class="section-heading text-serif">Development Process</h2>
+          <p class="section-description">A systematic six-step workflow ensuring outstanding quality.</p>
+        </div>
+
+        <div class="process-six-grid">
+          <div class="process-step-card">
+            <span class="step-num font-mono text-gold">01</span>
+            <div class="step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h3>Requirement</h3>
+            <p>Gathering business goals and technical specifications.</p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num font-mono text-gold">02</span>
+            <div class="step-icon"><i class="fa-solid fa-magnifying-glass font-mono"></i></div>
+            <h3>Planning</h3>
+            <p>Structuring sitemap, user flow, and architecture.</p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num font-mono text-gold">03</span>
+            <div class="step-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Design</h3>
+            <p>Crafting editorial typography and responsive UI layouts.</p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num font-mono text-gold">04</span>
+            <div class="step-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Development</h3>
+            <p>Writing clean, semantic, high-speed HTML/CSS/JS code.</p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num font-mono text-gold">05</span>
+            <div class="step-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <h3>Testing</h3>
+            <p>Validating browser compatibility, speed, and mobile responsiveness.</p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num font-mono text-gold">06</span>
+            <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Launch</h3>
+            <p>Deploying live to server with ongoing technical support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-classic bg-light">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-sub-tag">GET IN TOUCH</span>
+          <h2 class="section-heading text-serif">Start Your Project</h2>
+          <p class="section-description">Reach out today for a consultation or WhatsApp quote (**7780660803**).</p>
+        </div>
+
+        <div class="contact-classic-layout">
+          <div class="contact-details-box">
+            <h3 class="text-serif text-blue">Contact Information</h3>
+            <p class="margin-bottom">Feel free to reach out via phone, email, or WhatsApp. We respond promptly.</p>
+
+            <div class="contact-info-list">
+              <div class="info-item">
+                <i class="fa-solid fa-phone text-gold"></i>
+                <div>
+                  <strong>Phone / Direct Call:</strong>
+                  <p>7780660803</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-brands fa-whatsapp text-blue"></i>
+                <div>
+                  <strong>WhatsApp Direct:</strong>
+                  <p>7780660803</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fa-solid fa-envelope text-gold"></i>
+                <div>
+                  <strong>Email Direct:</strong>
+                  <p>chenchukoushik@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fa-solid fa-location-dot text-blue"></i>
+                <div>
+                  <strong>Location:</strong>
+                  <p>India (Serving Global Clients)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-classic-links margin-top">
+              <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/koushik0623" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://wa.me/917780660803" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form-classic" onsubmit="submitClassicForm(event)">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="New Lead Submission - WEB VIBE @KK" />
+            
+            <div class="form-group">
+              <label><i class="fa-solid fa-layer-group text-blue"></i> Desired Architecture / Service</label>
+              <select id="form-project-type" name="project_type" class="form-select-classic">
+                <option value="Customized Bespoke Customer Plan">★ Customized Bespoke Customer Plan (Flexible Budget ₹25k – ₹60k)</option>
+                <option value="Custom Web App & AI Systems (ARCH-03)">ARCH-03: Custom Web Apps & AI Software (₹58,000 / $700)</option>
+                <option value="Online Store & E-Commerce (ARCH-02)">ARCH-02: Online Store & E-Commerce (₹45,000 / $550)</option>
+                <option value="Academic Publishing Platform (ARCH-04)">ARCH-04: Academic Publishing Platform (₹38,000 / $460)</option>
+                <option value="Corporate Business Website (ARCH-01)">ARCH-01: Corporate Business Website (₹28,000 / $340)</option>
+                <option value="Personal Brand & Portfolio">Personal Brand & Portfolio Website (₹20,000 / $240)</option>
+                <option value="High-Converting Landing Page">High-Converting Landing Page (₹15,000 / $180)</option>
+              </select>
+            </div>
+
+            <div class="form-grid-two">
+              <div class="form-group">
+                <label><i class="fa-solid fa-user"></i> Full Name</label>
+                <input type="text" id="form-name" name="name" required placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label><i class="fa-solid fa-phone text-gold"></i> Phone / WhatsApp</label>
+                <input type="tel" id="form-phone" name="phone" required placeholder="Phone or WhatsApp number" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fa-solid fa-envelope text-blue"></i> Email Address</label>
+              <input type="email" id="form-email" name="email" required placeholder="Your email address" />
+            </div>
+
+            <div class="form-grid-two">
+              <div class="form-group">
+                <label><i class="fa-solid fa-indian-rupee-sign text-gold"></i> Target Budget</label>
+                <input type="text" id="form-budget" name="budget" placeholder="e.g. ₹50,000 / $600 or Flexible" />
+              </div>
+              <div class="form-group">
+                <label><i class="fa-regular fa-clock text-blue"></i> Preferred Timeline</label>
+                <input type="text" id="form-timeline" name="timeline" placeholder="e.g. 1-2 Weeks / Urgent" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label><i class="fa-solid fa-pen-to-square"></i> Project Details & Specifications</label>
+              <textarea id="form-details" name="message" rows="4" required placeholder="Describe your website goals, custom features, target audience, or specific requirements..."></textarea>
+            </div>
+
+            <button type="submit" id="form-submit-btn" class="btn-classic-primary w-100">
+              Send Message
+            </button>
+            <div id="form-response-alert" style="display:none; margin-top:1rem; padding:1rem; border-radius:8px; font-size:0.9rem;"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-classic">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.75rem;">
+          <img src="./logo.jpg" alt="WEB VIBE @KK WK Logo" class="brand-logo-img" />
+          <h3 class="text-serif" style="margin:0;">WEB VIBE @KK</h3>
+        </div>
+        <p>A classic, high-end digital agency creating modern websites that grow your business.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li>Business Websites</li>
+          <li>Portfolio Websites</li>
+          <li>Landing Pages</li>
+          <li>E-Commerce Websites</li>
+          <li>Custom Web Apps</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-phone text-gold"></i> 7780660803</p>
+        <p><i class="fa-brands fa-whatsapp text-blue"></i> 7780660803</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <div class="container">
+        <p>© 2026 WEB VIBE @KK. All Rights Reserved. Timeless • Elegant • Professional. <a href="javascript:void(0)" onclick="openDatabaseModal()" title="Admin Inquiries" style="color:inherit; opacity:0.3; font-size:0.75rem; text-decoration:none; margin-left:0.5rem;"><i class="fa-solid fa-database"></i></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top-classic" onclick="scrollToTop()" title="Back To Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div id="project-modal" class="modal-overlay hidden">
+    <div class="modal-card-classic">
+      <div class="modal-header">
+        <h3 id="modal-project-title" class="text-serif">Project Details</h3>
+        <button class="modal-close-btn" onclick="closeProjectModal()">&times;</button>
+      </div>
+      <div id="modal-project-content" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ARCHITECTURAL BLUEPRINT & SOLUTIONS DEEP-DIVE MODAL -->
+  <div id="blueprint-modal" class="modal-overlay hidden">
+    <div class="modal-card-classic blueprint-modal-dialog">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:0.85rem;">
+          <div id="modal-blueprint-icon" class="modal-blueprint-avatar">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <div>
+            <h3 id="modal-blueprint-title" class="text-serif" style="margin:0; font-size:1.3rem;">Architectural Blueprint</h3>
+            <span id="modal-blueprint-category" class="font-mono text-gold" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px;">ENGINEERED SPECIFICATION</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeBlueprintModal()">&times;</button>
+      </div>
+      <div id="modal-blueprint-content" class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- LEAD SUBMISSION CONFIRMATION MODAL (DIRECT UNBLOCKABLE ACTIONS) -->
+  <div id="lead-confirmation-modal" class="modal-overlay hidden">
+    <div class="modal-card-classic" style="max-width:540px; text-align:center;">
+      <div style="width:64px; height:64px; border-radius:50%; background:rgba(22,163,74,0.1); color:#16a34a; display:flex; align-items:center; justify-content:center; font-size:2rem; margin:0 auto 1.25rem auto;">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="text-serif" style="margin-bottom:0.5rem; font-size:1.5rem;">Inquiry Received!</h3>
+      <div style="display:inline-block; background:var(--bg-light); border:1px solid var(--soft-gray); padding:0.4rem 1rem; border-radius:20px; font-family:var(--font-mono); font-size:0.85rem; color:var(--deep-blue); margin-bottom:1rem;">
+        Reference ID: <strong id="confirm-lead-id">#KK-LEAD-XXXX</strong>
+      </div>
+      <p id="confirm-lead-desc" style="color:var(--text-muted); font-size:0.92rem; line-height:1.6; margin-bottom:1.5rem;">
+        Thank you for reaching out! Your inquiry has been received. You can connect with us directly on WhatsApp or by email to start your project consultation.
+      </p>
+
+      <div style="display:flex; flex-direction:column; gap:0.85rem;">
+        <a id="confirm-whatsapp-btn" href="#" target="_blank" rel="noopener" class="btn-classic-primary" style="background:#25d366; border-color:#25d366; font-size:1rem; padding:0.95rem 1.5rem; display:flex; align-items:center; justify-content:center; gap:0.65rem;">
+          <i class="fa-brands fa-whatsapp" style="font-size:1.3rem;"></i>
+          <span>Open WhatsApp Chat Directly (7780660803)</span>
+        </a>
+
+        <a id="confirm-email-btn" href="#" class="btn-classic-outline" style="display:flex; align-items:center; justify-content:center; gap:0.65rem; padding:0.85rem 1.5rem;">
+          <i class="fa-solid fa-envelope text-gold"></i>
+          <span>Send via Email Client (chenchukoushik@gmail.com)</span>
+        </a>
+
+        <div style="display:flex; justify-content:center; gap:1rem; margin-top:0.5rem;">
+          <button onclick="closeConfirmationModal()" class="btn-classic-outline" style="border:none; color:var(--text-muted); font-size:0.9rem; cursor:pointer;">
+            Done / Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENT INQUIRIES & LEADS CRM DATABASE MODAL -->
+  <div id="database-modal" class="modal-overlay hidden">
+    <div class="modal-card-classic" style="max-width:980px; width:95%; max-height:92vh;">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:0.85rem;">
+          <div class="modal-blueprint-avatar" style="background:rgba(10,102,194,0.1); color:var(--deep-blue); border-color:rgba(10,102,194,0.25);">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <div>
+            <h3 class="text-serif" style="margin:0; font-size:1.35rem;">Client Inquiries CRM Database</h3>
+            <span class="font-mono text-gold" style="font-size:0.75rem; text-transform:uppercase; letter-spacing:1px;">SECURE RECORD STORAGE • REAL-TIME LEADS</span>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeDatabaseModal()">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding-top:0.5rem;">
+        <!-- Stats summary row -->
+        <div class="db-stats-row">
+          <div class="db-stat-card">
+            <span class="db-stat-num" id="db-stat-total">0</span>
+            <span class="db-stat-label">Total Inquiries</span>
+          </div>
+          <div class="db-stat-card">
+            <span class="db-stat-num text-gold" id="db-stat-custom">0</span>
+            <span class="db-stat-label">Customized Client Scopes</span>
+          </div>
+          <div class="db-stat-card">
+            <span class="db-stat-num text-green" id="db-stat-status">Connected</span>
+            <span class="db-stat-label">Database Pipeline Status</span>
+          </div>
+        </div>
+
+        <!-- CRM Toolbar -->
+        <div class="db-toolbar">
+          <div class="db-search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="db-search-input" placeholder="Search inquiries by client name, email, architecture..." oninput="filterDatabaseTable()" />
+          </div>
+          <div class="db-toolbar-actions">
+            <button class="btn-db-action" onclick="exportDatabaseCSV()" title="Export all inquiries to CSV">
+              <i class="fa-solid fa-file-csv text-green"></i> Export CSV
+            </button>
+            <button class="btn-db-action" onclick="refreshDatabaseUI()" title="Refresh database records">
+              <i class="fa-solid fa-arrows-rotate text-blue"></i> Refresh
+            </button>
+            <button class="btn-db-action text-red" onclick="clearDatabaseRecords()" title="Clear all records">
+              <i class="fa-solid fa-trash-can"></i> Clear All
+            </button>
+          </div>
+        </div>
+
+        <!-- Inquiries Table -->
+        <div class="db-table-container">
+          <table class="db-table" id="db-inquiries-table">
+            <thead>
+              <tr>
+                <th>Lead ID</th>
+                <th>Date & Time</th>
+                <th>Client Name</th>
+                <th>Contact</th>
+                <th>Architecture / Plan</th>
+                <th>Budget / Timeline</th>
+                <th>Requirements</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="db-table-body">
+              <!-- Dynamically populated from IndexedDB + Server -->
+            </tbody>
+          </table>
+          <div id="db-empty-state" style="display:none; text-align:center; padding:3rem 1rem; color:var(--text-muted);">
+            <i class="fa-solid fa-inbox" style="font-size:2.5rem; margin-bottom:1rem; opacity:0.5;"></i>
+            <h4>No Inquiries in Database Yet</h4>
+            <p style="font-size:0.85rem;">Submit a test inquiry through the contact form or scope estimator to view it here in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
